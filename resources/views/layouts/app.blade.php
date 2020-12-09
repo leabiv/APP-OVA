@@ -56,6 +56,7 @@
                         <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Home</a></li>
 
                         <li class="nav-item"><a class="nav-link" href="{{route('unidades.list')}}">Listar Unidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('temas.list')}}">Listar Temas</a></li>
 
                         <li class="nav-item"><a class="nav-link" href="{{route('unidades.create')}}">Crear Unidad</a></li>
 

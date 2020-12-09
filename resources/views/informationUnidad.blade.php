@@ -22,7 +22,7 @@
 
                     <p>Descripcion: {{$unidades->descripUnidad}}</p>
 
-                    <iframe width="560" height="315" src="{{$unidades->url_video}}" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src={{$unidades->url_video}} allowfullscreen></iframe>
                     <p>{{$unidades->url_video}}</p>
 
                     <form action="{{route('unidades.destroy', $unidades)}}" method="POST">

@@ -15,7 +15,10 @@
                     @endif
 
                     <h1>Creacion de la Unidad</h1>
-                    <form action="{{route('unidades.store')}}" method="POST">
+
+                    <a href="{{route('temas.create')}}">Crear Tema</a>
+
+                    <form method="POST" action="{{route('unidades.store')}}" enctype="multipart/form-data">
 
                         @csrf
                 
@@ -66,8 +69,8 @@
                             <br>
                         @enderror
                         <br>
+
                         <button type="submit">Enviar unidad</button>
-                
                     </form>
                 </div>
             </div>

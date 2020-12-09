@@ -31,7 +31,7 @@ class UnidadController extends Controller
         ]);
 
         $unidades = Unidad::create($request->all());
-
+            
         return redirect()->route('unidades.information', $unidades->id);
       
         }

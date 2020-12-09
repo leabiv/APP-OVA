@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UnidadController;
 use App\Http\Controllers\CorreoController;
+use App\Http\Controllers\TemaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +49,13 @@ Route::get('correo', [CorreoController::class, 'index'])->name('correo.index');
 
 Route::post('correo', [CorreoController::class, 'store'])->name('correo.store');
 
+//Crear Temas
+Route::get('temas/createTemas', [TemaController::class, 'createTema'])->name('temas.create');
+
+Route::post('temas', [TemaController::class, 'store'])->name('temas.store');
+
+//Listar Temas
+Route::get('temas/lisTemas', [TemaController::class, 'listarTemas'])->name('temas.list');
+
+//Informacion Tema
+Route::get('temas/information/{id}', [TemaController::class, 'informacionTema'])->name('temas.information');
